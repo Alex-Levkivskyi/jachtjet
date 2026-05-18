@@ -1,0 +1,39 @@
+.header {
+  width: 100%;
+  padding-top: 32px;
+}
+
+.header-container {
+  width: 1080px;
+  height: 48px;
+  margin: 0 auto;
+  background: rgba(251, 251, 251, 0.5);
+  border: 1px solid #fbfbfb;
+  border-radius: 8px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 4px;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #fbfbfb;
+}
+
+.nav-link.active {
+  background-color: #1b414b;
+}

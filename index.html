@@ -4,28 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>yachtjet</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- #region header -->
-    <header>
-      <a href="./index.html">yachtjet</a>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#yachts">Yachts</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li><a href="#" target="_blank">IG</a></li>
-        <li><a href="#" target="_blank">YT</a></li>
-        <li><a href="#" target="_blank">FB</a></li>
-      </ul>
-    </header>
-    <!-- #endregion header-->
-    <main>
-      <section class="hero">
-        <div class="container">
+<!--region hero-->
+    <section class="hero-section">
+      <header class="header">
+      <div class="header-container">
+        <a href="./index.html" class="logo">yachtjet</a>
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#yachts">Yachts</a></li>
+            <li><a class="nav-link" href="#reviews">Reviews</a></li>
+          </ul>
+        </nav>
+        <div class="socials">
+          <ul class="socials-list">
+            <li>
+              <a href="#" class="social-link" target="_blank"><svg width="19" height="19"><use href="./images/icons-he-fo.svg#insta-logo-head"></use>
+              </svg>
+            </a>
+            </li>
+            <li>
+              <a href="#" class="social-link" target="_blank"><svg width="20" height="20"><use href="./images/icons-he-fo.svg#yout-logo-head"></use>
+              </svg></a>
+            </li>
+            <li>
+              <a href="#" class="social-link" target="_blank"><svg width="20" height="20"><use href="./images/icons-he-fo.svg#faceb-logo-head"></use>
+              </svg></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </header>
+        <div class="hero-content">
           <h1 class="hero-title">
             Explore the High Seas with Our Luxury Yacht Rentals
           </h1>
@@ -33,15 +47,19 @@
             Experience the freedom and luxury of sailing on the open seas.
             Choose from our top-of-the-line yacht fleet and enjoy
             anunforgettable journey surrounded by breathtaking views and
-            state-of-the-art anenities.
+            state-of-the-art amenities.
           </p>
-          <a href="#yachts">Yacht rental</a>
+          <a href="#yachts" class="hero-btn">Yacht rental</a>
         </div>
-      </section>
+    </section>
+
+<!--#endregion hero-->
+
+     <main>
+      <!--region about-->
       <section class="about" id="about">
-        <div class="container about-wrapper"></div>
+        <div class="container about-wrapper">
         <div class="about-content-left">
-          YachtJet fleet is here to take you on the ultimate adventure
           <h2 class="about-title">
             YachtJet fleet is here to take you on the ultimate adventure
           </h2>
@@ -59,9 +77,13 @@
             the high seas.
           </p>
         </div>
+      </div>
       </section>
+      <!--#endregion about-->
+
+      <!--region yachts-->
       <section class="yachts" id="yachts">
-        <div class="yacht-selection">
+        <div class="container yacht-selection">
           <h2 class="yachts-main-title">
             Choose your dream yacht and sail away into the sunset
           </h2>
@@ -76,7 +98,7 @@
               />
               <div class="yachts-info-header">
                 <h3 class="yacht-name">ARROW</h3>
-                <p class="yacht-type" LUXURY YACHTS></p>
+                <p class="yacht-type">LUXURY YACHTS</p>
               </div>
               <ul class="yacht-details">
                 <li><span>LENGTH</span><span>48m (155ft)</span></li>
@@ -96,7 +118,7 @@
               />
               <div class="yachts-info-header">
                 <h3 class="yacht-name">BENETTI OASIS 40M B...</h3>
-                <p class="yacht-type" LUXURY YACHTS></p>
+                <p class="yacht-type">LUXURY YACHTS</p>
               </div>
               <ul class="yacht-details">
                 <li><span>LENGTH</span><span>41m (133ft)</span></li>
@@ -116,7 +138,7 @@
               />
               <div class="yachts-info-header">
                 <h3 class="yacht-name">BELLE ANNA</h3>
-                <p class="yacht-type" LUXURY YACHTS></p>
+                <p class="yacht-type">LUXURY YACHTS</p>
               </div>
               <ul class="yacht-details">
                 <li><span>LENGTH</span><span>50m(155ft)</span></li>
@@ -132,6 +154,11 @@
           </div>
         </div>
       </section>
+
+<!--#endregion yachts-->
+
+<!--region offers-->
+
       <section class="offers" id="offers">
         <div class="container offers-wrapper">
           <h2 class="visually-hidden">Our Yacht Services and Activities</h2>
@@ -174,6 +201,9 @@
           </div>
         </div>
       </section>
+<!--#endregion offers-->
+
+<!--region rent-form-->
       <section class="rent" id="rent-form">
         <div class="container rent-wrapper">
           <div class="rent-image-view">
@@ -185,30 +215,29 @@
               class="rent-img"
             />
           </div>
-          <form class="rent-content">
+          <form class="rent-form" autocomplete="off">
             <h2 class="rent-title">Rent a yacht now</h2>
-             <form class="rent-form" autocomplete="off"></form>
                 <div class="form-field">
                   <input 
                    type="text"
                    name="user-name"
                    class="form-input"
                    placeholder="Full Name"
-                   requaired
+                   required
                   />
                 </div>
                 <div class="form-field">
                   <input 
-                   type="text"
+                   type="email"
                    name="user-email"
                    class="form-input"
                    placeholder="Email"
-                   requaired
+                   required
                   />
                 </div>
                  <div class="form-field">
                     <input 
-                     type="text"
+                     type="tel"
                      name="user-phone"
                      class="form-input"
                      placeholder="Phone number"
@@ -216,7 +245,6 @@
                   </div>
                  <div class="form-field">
                   <textarea 
-                    type="text"
                     name="user-comment"
                     class="form-textarea"
                     placeholder="Comment"
@@ -227,6 +255,11 @@
           </div>
         </div>
       </section>
+
+<!--#endregion rent-form-->
+
+<!--region reviews-->
+
       <section class="reviews" id="reviews">
         <div class="container">
           <h2 class="reviews-title">
@@ -235,7 +268,7 @@
           <p class="reviews-subtitle">
             Our customers have enjoyed unforgettable moments on our yachts. don't just take our word for it-read on to find out what they have to say about their journey with us.
           </p>
-          <ul class="reviws-list">
+          <ul class="reviews-list">
             <li class="reviews-item">
               <img src="./images/John-Wax.jpg" alt="John Wax" class="review-avatar" width="56" height="56" />
               <h3 class="review-name">John Wax</h3>
@@ -257,7 +290,13 @@
           </ul>
         </div>
       </section>
+
+<!--#endregion reviews-->
+
     </main>
+
+<!--region footer-->
+
     <footer class="footer">
       <div class="footer-top">
         <a href="#" class="footer-logo">yachtjet</a>
@@ -271,20 +310,20 @@
         <ul class="footer-socials">
           <li>
             <a href="#" class="social-link" aria-label="Instagram">
-              <img src="./images/Vector-ig-white.jpg" alt="white ig label"
-              width="24" height="24">
+              <svg width="19" height="19"><use href="./images/icons-he-fo.svg#insta-logo-foot"></use>
+              </svg>
             </a>
-            </li>
+          </li>
           <li>
             <a href="#" class="social-link" aria-label="YouTube">
-              <img src="./images/Vector-yt-white.jpg" alt="white yt label"
-              width="24" height="24">
+              <svg width="20" height="20"><use href="./images/icons-he-fo.svg#yout-logo-foot"></use>
+              </svg>
             </a>
           </li>
           <li>
             <a href="#" class="social-link" aria-label="Facebook">
-              <img src="./images/Vector-fb-white.jpg" alt="white fb label"
-              width="24" height="24">
+              <svg width="20" height="20"><use href="./images/icons-he-fo.svg#faceb-logo-foot"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -295,8 +334,11 @@
       </div>
       <div class="footer-bottom">
         <p class="footer-copy">2023. Yacht Adventures</p>
-        <a href="#" class="footer-policy">Privacy Police</a>
+        <a href="#" class="footer-policy">Privacy Policy</a>
       </div>
     </footer>
+
+<!--#endregion footer-->
+
   </body>
 </html>

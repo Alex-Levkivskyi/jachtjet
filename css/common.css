@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0d1e21;
+  color: #fbfbfb;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0 auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+n4 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
