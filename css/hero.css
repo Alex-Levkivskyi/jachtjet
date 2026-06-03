@@ -65,3 +65,55 @@
 .logo {
   color: #1b414b;
 }
+
+@media screen and (max-width: 767px) {
+  .hero-section {
+    height: 812px;
+    padding-top: 0;
+    background-position: center;
+  }
+  .hero-content {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+  }
+  .hero-title {
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    min-width: 335px;
+    margin: 0 auto 32px auto;
+  }
+  .hero-text {
+    font-size: 14px;
+    line-height: 1.18;
+    max-width: 335px;
+    margin: 0 auto 32px auto;
+  }
+  .hero-btn {
+    padding: 14px 32px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero-title {
+    font-size: 70px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    max-width: 704px;
+    margin-bottom: 24px;
+  }
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 597px;
+    margin-bottom: 24px;
+  }
+  .hero-btn {
+    width: 179px;
+    height: 52px;
+    font-size: 16px;
+  }
+}
